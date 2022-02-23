@@ -1,0 +1,12 @@
+<?php
+class view_User_LoginBox extends view_Abstract
+{
+	protected function renderContent( $content )
+	{
+		$msg = '';
+		if ( $content[ 'loginFailed' ] === true )
+			$msg = '<span class="text-red">Login and/or password is incorrect.</span><br />';
+		return $msg . '<form method="post" action="/index.php?User,login">Login:<input type="text" name="login" /><br />Pass:<input type="password" name="password" /><br /><input type="submit" value="Login" /></form>';
+	}
+}
+?>

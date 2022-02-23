@@ -1,0 +1,31 @@
+pDB-0.37b - The PHP Database
+
+pDB is a collection of PHP Classes that implement an embeddable SQL DataBase engine. 
+This project was started in 2002 as ´proof-of-concept´ by FloSax and BennyZaminga. 
+pDB is currently developped and actively maintained by BennyZaminga <bzaminga__at__web__dot__de>.
+
+Advantages of pDB:
+- It's pure PHP ;)
+- No extension or external resource needed
+- Embedable/distributable into/with your own application or script
+- On small tables faster than MySQL/PostgreSQL
+- No socket and/or TCP/IP-overhead
+- Easy movable database
+
+Disadvantages of pDB:
+- It's interpreted cause written in PHP
+- Gets slow on big tables. Not yet optimized in any way ;(
+- Not fully SQL92 compliant
+- Not very scalable
+
+Additional Notes:
+- Please make sure your DB_ROOT/-folder is writable for Apache/PHP, else pDB will fail.
+- Feel free to change the location of your DB_ROOT, but do not forget to adjust the path in ´pDB.conf.php´.
+Recommended is to move your DB_ROOT outside your web-root, so DB-files can not be accessed directly by Apache.
+- pDB is currently alpha-quality software and is NOT recommended to be used in mission critical environments.
+- Please refer to http://wiki.devote.ch for additional informations related to pDB.
+- This files provided here are only a small subset of the whole pDB-project. Feel free to contact me using the above email if you wanna get involved.
+- Documentation of the pDB-API is available for download at http://wiki.devote.ch
+- Feel free to report bugs and send patches.
+
+Have Fun ;)

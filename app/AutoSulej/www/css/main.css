@@ -1,0 +1,364 @@
+@CHARSET "UTF-8";
+body
+{
+	background-image: url( '/img/content/background-page.png' );
+	background-repeat: repeat-x;
+	color: #231973;
+}
+h1, h2, h3, h4, h5
+{
+	color: #F5D500;
+}
+h1, h2, h3
+{
+	font-weight: bold;
+}
+h1
+{
+	height: 26px;
+	padding: 24px 30px 20px 30px;
+	font-size: 24px;
+}
+a, a:hover, a:visited
+{
+	color: inherit;
+}
+#pageContent
+{
+	margin: auto;
+	width: 1000px;
+}
+
+#header
+{
+/* 	background-image: linear-gradient(bottom, rgb(248,255,237) 44%, rgb(231,255,194) 72%, rgb(231,255,199) 86%);
+	background-image: -o-linear-gradient(bottom, rgb(248,255,237) 44%, rgb(231,255,194) 72%, rgb(231,255,199) 86%);
+	background-image: -moz-linear-gradient(bottom, rgb(248,255,237) 44%, rgb(231,255,194) 72%, rgb(231,255,199) 86%);
+	background-image: -webkit-linear-gradient(bottom, rgb(248,255,237) 44%, rgb(231,255,194) 72%, rgb(231,255,199) 86%);
+	background-image: -ms-linear-gradient(bottom, rgb(248,255,237) 44%, rgb(231,255,194) 72%, rgb(231,255,199) 86%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, rgb(248,255,237)),
+		color-stop(0.72, rgb(231,255,194)),
+		color-stop(0.86, rgb(231,255,199))
+	); */
+	color: #231973;
+}
+#header div
+{
+	padding: 5px;
+	line-height: 18px;
+}
+#header span.phone
+{
+	font-size: 19px;
+	line-height: 21px;
+}
+#header span.phoneBig
+{
+	font-size: 24px;
+	line-height: 28px;
+}
+#header ul.mainMenu
+{
+	padding: 40px 0 0 320px;
+}
+
+#header ul.mainMenu li
+{
+	display: inline;
+	padding: 0 10px;
+}
+
+#header ul.mainMenu li.mainMenuItem a
+{
+	padding: 0 25px;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+	color: #231973;
+}
+
+#header img.headerLogo
+{
+	float: left;
+}
+
+#header:after
+{
+	clear: both;
+	display: block;
+	content: " ";
+}
+div.sliderBox
+{
+	height: 300px;
+	position: relative;
+	overflow: auto;
+}
+div.sliderBox li
+{
+	height: 300px;
+}
+div.newsBox
+{
+	position: relative;
+	overflow: auto;
+}
+div.newBox
+{
+	margin: 6px;
+	height: 113px;
+	overflow: hidden;
+	width: 218px;
+}
+div.sliderBox li, div.newsBox li
+{
+	list-style: none;
+}
+div.sliderBox ul li, div.newsBox ul li
+{
+	float: left;
+}
+div.insideBox
+{
+	padding: 20px;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(152,179,231,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(152,179,231,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(152,179,231,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(152,179,231,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(152,179,231,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(152,179,231,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#98b3e7',GradientType=0 ); /* IE6-9 */	
+}
+div#o-firmie
+{
+	background-image: url('/img/content/o-firmie-slider3.jpg');
+}
+div#oferta
+{
+	background-image: url('/img/content/oferta-slider3.jpg');
+}
+div#stacja-kontroli
+{
+	background-image: url('/img/content/stacja-kontroli-slider3.jpg');
+}
+div.slideBox
+{
+	padding: 15px;
+	vertical-align: bottom;
+	width: 970px;
+	display: table-cell;
+	height: 270px;
+}
+div.slideBox h2
+{
+	display: inline-block;
+	padding: 5px;
+	vertical-align: bottom;
+	font-weight: bold;
+}
+div.slideBox h5
+{
+	line-height: 28px;
+	padding: 5px;
+	vertical-align: bottom;
+	display: inline-block;
+}
+div.miniBoxContainer
+{
+	height: 380px;
+}
+div.bigBox
+{
+	width: 300px;
+	height: 350px;
+	margin: 15px 0 15px 50px;
+	float: left;
+	background-image: url('/img/AS_BB_bkgd2.png');
+	font-weight: bold;
+}
+div.bigBox:first-child
+{
+	margin-left: 0;
+}
+div.bigBox h3
+{
+	display: block;
+	height: 20px;
+	margin: 14px 16px 6px 16px;
+	font-weight: bold;
+}
+div.bigBox img
+{
+	height: 270px;
+	width: 300px;
+}
+a.followUp
+{
+	display: block;
+	width: 100%;
+	text-align: right;
+	text-decoration: none;
+}
+a.followUp span
+{
+	margin: 10px 14px 8px 14px;
+	display: block;
+}
+div#map-canvas
+{
+	height: 256px;
+	width: 300px;
+}
+div.gmOverlay {
+   background:transparent; 
+   position:relative; 
+   width:300px;
+   height:256px; /* your iframe height */
+   top:256px;  /* your iframe height */
+   margin-top:-256px;  /* your iframe height */
+   z-index: 2;
+}
+div#map-canvas-waw
+{
+	height: 300px;
+	width: 970px;
+}
+div#map-canvas-sdl
+{
+	height: 300px;
+	width: 970px;
+}
+img.dirImg
+{
+	width: 500px;
+	height: 250px;
+	float: left;
+	margin-bottom: 15px;
+}
+div.newsBox
+{
+	height: 115px;
+	width: 220px;
+	background: white;
+/**	padding: 5px; **/
+}
+div.newsBox li
+{
+	height: 125px;
+	width: 230px;
+}
+div.smallBox
+{
+	width: 230px;
+	height: 200px;
+	margin: 10px 0 10px 26px;
+	float: left;
+	background-image: url('/img/AS_SB_bkgd2.png');
+}
+div.smallBox:first-child
+{
+	margin-left: 0;
+}
+div.smallBox h4
+{
+	height: 20px;
+	margin: 14px 16px 6px 16px;
+}
+div.smallBox img
+{
+	height: 125px;
+	width: 230px;
+	margin-bottom: -3px;
+}
+div.smallBox img.icon
+{
+	height: 80px;
+	width: 80px;
+}
+div.smallBox div.subBox
+{
+	padding: 15px 15px 0;
+	width: 200px;
+	height: 110px;
+	background-color: #c4f3ff;
+	background-image: url("/img/AS_HB_mid_bkgd.png");
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+}
+
+div.horizBox
+{
+	margin-top: 15px;
+	padding-bottom: 14px;
+	float: left;
+/* 	background-color: #c4f3ff; */
+	background-image: url('/img/AS_HB_bot_bkgd.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	width: 100%;
+}
+div.horizBox h3
+{
+	display: block;
+	height: 20px;
+	/*margin: 14px 16px 6px 16px;*/
+	padding: 14px 16px 6px 16px;
+	font-weight: bold;
+	clear: both;
+	background-image: url('/img/AS_HB_top_bkgd.png');
+	background-repeat: no-repeat;
+}
+div.horizBox img
+{
+	border: 1px solid #ffffff;	
+}
+div.horizBox div.subBox
+{
+	padding: 15px 15px 0;
+	width: 970px;
+	background-color: #c4f3ff;
+	background-image: url("/img/AS_HB_mid_bkgd.png");
+	float: left;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+}
+ul.offerList
+{
+	list-style: circle;
+	padding-left: 20px;
+	line-height: 1.3em;
+}
+
+.alpha60
+{
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.3);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000, endColorstr=#55000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000, endColorstr=#55000000)";
+}
+.left
+{
+	float: left;
+	margin-right: 20px;
+}
+.right
+{
+	float: right;
+	margin-left: 20px;
+}
+.textSmaller
+{
+	font-size: 0.85em;
+	font-weight: normal;
+	padding: 5px;
+}

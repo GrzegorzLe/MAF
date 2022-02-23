@@ -1,0 +1,64 @@
+
+---- TEST TOUR ------
+CREATE DATABASE sql_tour
+USE sql_tour; CREATE TABLE sql_tour (int ID 10, string Vorname 50, string Nachname 50)
+USE sql_tour; INSERT INTO sql_tour VALUES ('662', '195.186.140.246', '1080247566')
+USE sql_tour; INSERT INTO sql_tour VALUES ('10', 'www.google.ch', '1001')
+USE sql_tour; DELETE FROM sql_tour WHERE ID == 10
+
+---- IMPLEMENTED ----
+USE
+USE db_00
+USE db_00 wrong
+USE ("5", "+", "8")
+USE ( 'true', '+', 'false')
+USE ( 'true', 'OR', 'false')
+USE ( 10, *, 10)
+USE ( $_SERVER['REMOTE_ADDR'], ., '_pokee')
+USE ( $_SERVER['REMOTE_ADDR'], ., '_pokee', or, 'false')
+
+
+
+SHOW DATABASES
+USE sql_tour;SHOW TABLES
+USE sql_tour;SHOW COLUMNS from sql_tour
+
+create database db_00
+USE db_00; create table table_02 (int ID 3,string Name 255,blob Data)
+USE db_00; create table table_02 (int ID 3,string Name 255,blob Data 5000000)
+
+DROP DATABASE db_00
+USE db_00; DROP TABLE table_02
+
+---- NOT IMPLEMENTED YET ----
+DELETE FROM my_counter WHERE time < 1080161166
+DELETE FROM my_counter WHERE time < 1080161166 AND ID > 5
+DELETE FROM my_pages WHERE time < date_sub(now(), interval '30' day) AND latest = 'N'
+DELETE FROM my_referrers WHERE time < date_sub(now(), interval '30' day)
+
+INSERT INTO my_counter (count, ip, time) VALUES ('662', '195.186.140.246', '1080247566')
+
+SELECT page_tag FROM my_acls WHERE list NOT LIKE ('%*%') AND list NOT LIKE ('%§%') AND list NOT LIKE ('%Something%') AND privilege = 'read'
+SELECT * FROM my_modules WHERE position = 'l' AND showto != 'guest' OR position = 'l' AND showto = 'admin' ORDER BY ord
+SELECT * FROM my_modules ORDER BY ord
+SELECT * FROM my_acls WHERE page_tag = 'Free_Link_test' AND privilege = 'comment' LIMIT 1
+SELECT * FROM my_pages WHERE tag = 'Free_Link_test' AND latest = 'Y' LIMIT 1
+SELECT * FROM my_pages WHERE id = '243' LIMIT 1
+SELECT * FROM my_pages WHERE latest = 'Y' AND comment_on = '' ORDER BY time DESC
+SELECT * FROM my_pages WHERE comment_on = 'Free_Link_test' AND latest = 'Y' ORDER BY time
+SELECT * FROM my_users WHERE name = 'Something'
+SELECT MAX(count) FROM my_counter
+SELECT MIN(id) AS id FROM my_pages WHERE comment_on != '' GROUP BY tag ORDER BY id DESC
+SELECT bookmarks FROM my_users WHERE name='Something'
+SELECT count FROM my_counter
+SELECT from_tag AS tag FROM my_links WHERE to_tag = 'Free_Link_test' AND from_tag != '' ORDER BY tag
+SELECT lang FROM my_pages WHERE latest = 'Y' AND tag = 'Free_Link_test' GROUP BY lang
+SELECT message,id,sendername FROM my_messages WHERE name = 'Something'
+SELECT name FROM my_users
+SELECT name,signuptime,confirmed FROM my_users WHERE confirmed = 'Y' ORDER BY signuptime DESC LIMIT 5
+SELECT name,status FROM my_chat_users WHERE time > '1080161436'
+SELECT pollname FROM my_poll
+SELECT tag FROM my_pages WHERE tag LIKE ('%serGruppe%')
+SELECT tag FROM my_pages WHERE latest = 'Y' AND comment_on = ''
+SELECT userip,pollname FROM my_poll WHERE userip = '195.186.140.246' AND usertime > 1080161166 AND pollname = 'pollcool'
+SELECT username FROM my_onlineusers

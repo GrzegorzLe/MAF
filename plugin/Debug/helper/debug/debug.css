@@ -1,0 +1,270 @@
+@CHARSET "UTF-8";
+/**
+ * Debug helper output CSS file
+ *
+	Copyright 2009 Grzegorz Lesniewski <grzegorz.lesniewski@gmail.com>
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+ */
+/*
+ * debug output styles
+ */
+table._dbg_output
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	background-color: #006600;
+	margin-top: 100px;
+}
+
+table._dbg_output td, table._dbg_output th
+{
+	padding: 2px;
+}
+
+table._dbg_output th
+{
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #009900;
+	cursor: pointer;
+	text-align: left;
+}
+
+table._dbg_output td
+{
+	background-color: #FFFFFF;
+}
+
+table._dbg_output td._dbg_debug
+{
+	background-color: #CCFFCC;
+	width: 200px;
+	cursor: pointer;
+}
+
+table._dbg_output td._dbg_warning
+{
+	background-color: #FFCCFF;
+	width: 200px;
+	cursor: pointer;
+}
+
+table._dbg_output td._dbg_error
+{
+	background-color: #FFCCCC;
+	width: 200px;
+	cursor: pointer;
+}
+
+/*
+ * variable dump styles
+ */
+/*
+ * general
+ */
+table._dbg_var
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	margin: 2px;
+}
+
+table._dbg_var td, table._dbg_var th
+{
+	padding: 2px;
+	background-color: #FFFFFF;
+}
+
+table th._dbg_var_header
+{
+	font-weight: bold;
+	color: #FFFFFF;
+	cursor: pointer;
+	text-align: left;
+	width: 64px;
+}
+
+table td._dbg_var_key
+{
+	cursor: pointer;
+}
+
+/*
+ * boolean
+ */
+table._dbg_var_boolean
+{
+	background-color: #666600;
+}
+
+table._dbg_var_boolean th._dbg_var_boolean_header
+{
+	background-color: #999900;
+}
+
+table._dbg_var_array td._dbg_var_boolean_key, table._dbg_var_object td._dbg_var_boolean_key
+{
+	background-color: #FFFFCC;
+}
+
+/*
+ * integer
+ */
+table._dbg_var_integer
+{
+	background-color: #660000;
+}
+
+table._dbg_var_integer th._dbg_var_integer_header
+{
+	background-color: #990000;
+}
+
+table._dbg_var_array td._dbg_var_integer_key, table._dbg_var_object td._dbg_var_integer_key
+{
+	background-color: #FFCCCC;
+}
+
+/*
+ * double
+ */
+table._dbg_var_double
+{
+	background-color: #660066;
+}
+
+table._dbg_var_double th._dbg_var_double_header
+{
+	background-color: #990099;
+}
+
+table._dbg_var_array td._dbg_var_double_key, table._dbg_var_object td._dbg_var_double_key
+{
+	background-color: #FFCCFF;
+}
+
+/*
+* string
+*/
+table._dbg_var_string
+{
+	background-color: #006666;
+}
+
+table._dbg_var_string th._dbg_var_string_header
+{
+	background-color: #009999;
+}
+
+table._dbg_var_array td._dbg_var_string_key, table._dbg_var_object td._dbg_var_string_key
+{
+	background-color: #CCFFFF;
+}
+
+/*
+* array
+*/
+table._dbg_var_array
+{
+	background-color: #006600;
+}
+
+table._dbg_var_array td
+{
+	background-color: #FFFFFF;
+}
+
+table._dbg_var_array th._dbg_var_array_header
+{
+	background-color: #009900;
+}
+
+table._dbg_var_array td._dbg_var_array_key, table._dbg_var_object td._dbg_var_array_key
+{
+	background-color: #CCFFCC;
+}
+
+/*
+* object
+*/
+table._dbg_var_object
+{
+	background-color: #0000CC;
+}
+
+table._dbg_var_object td
+{
+	background-color: #FFFFFF;
+}
+
+table._dbg_var_object th._dbg_var_object_header
+{
+	background-color: #4444CC;
+	white-space: nowrap;
+}
+
+table._dbg_var_array td._dbg_var_object_key, table._dbg_var_object td._dbg_var_object_key
+{
+	background-color: #CCDDFF;
+}
+
+/*
+* resource
+*/
+table._dbg_var_resource
+{
+	background-color: #884488;
+}
+
+table._dbg_var_resource td
+{
+	background-color: #FFFFFF;
+}
+
+table._dbg_var_resource th._dbg_var_resource_header
+{
+	background-color: #995599;
+	white-space: nowrap;
+}
+
+table._dbg_var_resource tr._dbg_var_resource_oddrow td
+{
+	background-color: #FFDDFF;
+}
+
+table._dbg_var_array td._dbg_var_resource_key, table._dbg_var_object th._dbg_var_resource_key, 
+table._dbg_var_resource td._dbg_var_resource_key, table._dbg_var_resource tr._dbg_var_resource_oddrow td._dbg_var_resource_key
+{
+	background-color: #FFBBFF;
+}
+
+table._dbg_var_NULL,
+table._dbg_var_unknown
+{
+	background-color: #666666;
+}
+
+table._dbg_var_NULL th._dbg_var_NULL_header,
+table._dbg_var_unknown th._dbg_var_unknown_header
+{
+	background-color: #999999;
+}
+
+table._dbg_var_array td._dbg_var_NULL_key, table._dbg_var_object td._dbg_var_NULL_key,
+table._dbg_var_array td._dbg_var_unknown_key, table._dbg_var_object td._dbg_var_unknown_key
+{
+	background-color: #CCCCCC;
+}

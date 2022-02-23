@@ -1,0 +1,11 @@
+RewriteEngine On
+#LogLevel alert rewrite:trace7
+
+RewriteCond %{SCRIPT_FILENAME} /www/svn/.+$ [NC,OR]
+RewriteCond %{SCRIPT_FILENAME} /www/css/.+\.css$ [NC,OR]
+RewriteCond %{SCRIPT_FILENAME} /www/img/.+\.(png|jpe?g)$ [NC,OR]
+RewriteCond %{SCRIPT_FILENAME} /www/js/.+\.js$ [NC,OR]
+RewriteCond %{SCRIPT_FILENAME} /www/index.php$ [NC]
+RewriteRule .* - [END]
+
+RewriteRule ^(.+)$ index.php?$1 [L]
